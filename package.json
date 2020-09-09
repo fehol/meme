@@ -1,0 +1,8 @@
+{
+  "name": "meme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fehol/meme.git",
+  "author": "Felix Hollmann <felix.hollmann@gmx.net>",
+  "license": "MIT"
+}
