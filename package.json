@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "https://github.com/fehol/meme.git",
   "author": "Felix Hollmann <felix.hollmann@gmx.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "fetch": "^1.1.0",
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.1"
+  }
 }
