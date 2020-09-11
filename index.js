@@ -3,12 +3,12 @@ const cheerio = require('cheerio');
 const fetch = require('node-fetch');
 const fs = require('fs');
 
-const memeUrl = 'https://memegen.link/examples';
+const mainUrl = 'https://memegen.link/examples';
 
 // Axios is basically for requests on the memeUrl website.
 // .get is the request, .then is the response. If you console.log this than you get a lot of html text in the terminal.
 axios
-  .get(memeUrl)
+  .get(mainUrl)
   .then((response) => {
     download(urlConnect(htmlArray(response.data)));
   })
@@ -51,7 +51,7 @@ async function download(Array) {
     const response = await fetch(Array[i]);
     const buffer = await response.buffer();
     fs.writeFile(`./memes/${nameArray[i]}.jpg`, buffer, () =>
-      console.log('WOW I DID IT!'),
+      console.log('memes incoming!'),
     );
   }
 }
